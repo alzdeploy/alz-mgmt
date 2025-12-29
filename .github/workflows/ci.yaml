@@ -13,7 +13,9 @@ on:
         type: string
 
 jobs:
-  validate_and_plan:
+  build:
+    runs-on: ubuntu-latest
+     validate_and_plan:
     uses: alzdeploy/alz-mgmt-templates/.github/workflows/ci-template.yaml@main
     name: 'CI'
     permissions:
